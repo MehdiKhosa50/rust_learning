@@ -1,3 +1,4 @@
+mod string_module;
 fn main() {
     let num: u16 = 65531;
     println!("The number is: {}", num);
@@ -10,4 +11,6 @@ fn main() {
     println!("Max u16 value is: {}", u64::MAX);
     println!("Min u16 value is: {}", u64::MIN);
     println!("Hello, world!");
+
+    string_module::print_hello();
 }
