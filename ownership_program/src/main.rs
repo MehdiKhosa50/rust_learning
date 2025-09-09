@@ -1,3 +1,4 @@
+mod borrow;
 fn main() {
 
     let my_string: String = get_string();
@@ -18,6 +19,8 @@ fn main() {
     // let str2 = str; // ownership moved here
     // println!("{}", str2);
     // println!("{}", str); // this would cause a compile-time error because str is no longer valid
+
+    borrow::borrow_string();
 }
 
 fn get_string() -> String {
