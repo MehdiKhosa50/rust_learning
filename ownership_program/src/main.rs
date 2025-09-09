@@ -1,9 +1,9 @@
 mod borrow;
+mod referencing;
 mod write_borrow;
 mod multiple_read_write_borrow;
 
 fn main() {
-
     let my_string: String = get_string();
     println!("{}", my_string);
 
@@ -24,6 +24,7 @@ fn main() {
     // println!("{}", str); // this would cause a compile-time error because str is no longer valid
 
     borrow::borrow_string();
+    referencing::referencing();
     write_borrow::write_borrow();
     multiple_read_write_borrow::multiple_read_write_borrow();
 }
