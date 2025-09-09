@@ -1,5 +1,7 @@
 mod borrow;
 mod write_borrow;
+mod multiple_read_write_borrow;
+
 fn main() {
 
     let my_string: String = get_string();
@@ -23,6 +25,7 @@ fn main() {
 
     borrow::borrow_string();
     write_borrow::write_borrow();
+    multiple_read_write_borrow::multiple_read_write_borrow();
 }
 
 fn get_string() -> String {
