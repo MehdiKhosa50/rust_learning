@@ -1,6 +1,7 @@
 mod borrow;
 mod referencing;
 mod write_borrow;
+mod dangling_reference;
 mod multiple_read_write_borrow;
 
 fn main() {
@@ -26,6 +27,7 @@ fn main() {
     borrow::borrow_string();
     referencing::referencing();
     write_borrow::write_borrow();
+    dangling_reference::dangling_reference();
     multiple_read_write_borrow::multiple_read_write_borrow();
 }
 
