@@ -1,4 +1,5 @@
 mod borrow;
+mod write_borrow;
 fn main() {
 
     let my_string: String = get_string();
@@ -21,6 +22,7 @@ fn main() {
     // println!("{}", str); // this would cause a compile-time error because str is no longer valid
 
     borrow::borrow_string();
+    write_borrow::write_borrow();
 }
 
 fn get_string() -> String {
