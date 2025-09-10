@@ -1,22 +1,6 @@
-use std::collections::HashMap;
-use std::collections::HashSet;
-use std::env;
-use std::error::Error;
-use std::fmt;
 use std::fs::File;
 use std::io;
-use std::io::prelude::*;
-use std::io::BufReader;
 use std::io::Write;
-use std::path::Path;
-use std::process;
-use std::rc::Rc;
-use std::str::FromStr;
-use std::sync::mpsc;
-use std::sync::{ Arc, Mutex };
-use std::thread;
-use std::time::Duration;
-use std::time::SystemTime;
 
 fn main() {
     println!("Hello, world!");
@@ -29,6 +13,4 @@ fn main() {
     let mut file = File::create(path).expect("Could not create file");
     file.write_all(input.as_bytes()).expect("Could not write to file");
     println!("Input written to {}", path);
-
-    
 }
